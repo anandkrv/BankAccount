@@ -28,7 +28,9 @@ pipeline {
 		stage ('Chautha Stage') {
 			parallel {
 				stage ('Unit Testing') {
-					echo 'Unit Testing chal raha hai!!'
+					steps {
+						echo 'Unit Testing chal raha hai!!'
+					}
 				}
 
 				stage ('Integration testing') {
